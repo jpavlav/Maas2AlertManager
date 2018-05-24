@@ -72,7 +72,7 @@ class Maas2AlertManager(object):
                 return(e)
             values = json_value
         self.__maas_overview = values
-    
+
     def gen_alert_manager_dict(self):
         alert_list = []
         for item in self.maas_alerts['values']:
@@ -102,6 +102,3 @@ class Maas2AlertManager(object):
             alert_list.append(am_dict)
         return alert_list
 
-
-if __name__ == '__main__':
-    thing = Maas2AlertManager()
