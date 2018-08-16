@@ -1,3 +1,0 @@
-apache-libcloud==1.5.0
-backports.ssl-match-hostname==3.5.0.1
-rackspace-monitoring==0.8.0

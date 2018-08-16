@@ -25,7 +25,7 @@ class Maas2AlertManager(object):
         for name in dir(obj):
             value = getattr(obj, name)
             if (not name.startswith('__') and not
-            inspect.ismethod(value) and not name == 'driver'):
+                    inspect.ismethod(value) and not name == 'driver'):
                 pr[name] = value
         return pr
 
@@ -101,4 +101,3 @@ class Maas2AlertManager(object):
                             am_dict[key][maas_outer_key] = inner_mapping
             alert_list.append(am_dict)
         return alert_list
-
